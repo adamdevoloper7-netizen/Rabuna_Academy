@@ -1,0 +1,353 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    width: 100%;
+    min-width: 1000px;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        45deg,
+        rgb(188, 1, 1) 40%,
+        black 60%
+    );
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+    margin-left: 90px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Tahoma, Arial, sans-serif;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ff1a1a;
+    transform: translateY(-2px);
+}
+
+.logo_of_Acde {
+    font-size: 50px;
+    font-family: fantasy;
+    white-space: nowrap;
+}
+
+.image_box img {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.conter_1 {
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    padding-top: 25px;
+
+    background-image: url("imgaes/WhatsApp Image 2026-09-03 at 4.36.54 PM.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card h1 {
+    text-align: left;
+    font-size: 60px;
+    font-family: fantasy;
+    padding-left: 10px;
+    color: black;
+}
+
+.bottom {
+    padding-bottom: 30px;
+}
+
+.card h3 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 28px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* IMAGE STRIP */
+.start_logo {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.831);
+}
+
+.img_logo img {
+    width: 420px;
+    height: 200px;
+    object-fit: cover;
+
+    box-shadow:
+        0 -10px 20px rgba(0, 0, 0, 0.6),
+        0 10px 20px rgba(0, 0, 0, 0.6);
+}
+.info_com {
+    background: linear-gradient(
+        -40deg,
+        rgb(106, 9, 9) 65%,
+        rgb(129, 0, 0) 50%
+    );
+}
+
+.text {
+    padding: 30px;
+    color: white;
+    text-align: right;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chams {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.one,
+.two,
+.tree {
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 5px 20px black;
+    transition: transform 0.3s ease;
+}
+
+.one img,
+.two img,
+.tree img {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.one .line,
+.two .line,
+.tree .line {
+    width: 350px;
+    height: 5px;
+    margin-top: -4px;
+
+    background: linear-gradient(
+        45deg,
+        red 40%,
+        black 60%
+    );
+}
+
+.one:hover,
+.two:hover,
+.tree:hover {
+    transform: translateY(-4px);
+}
+
+.one .text_1,
+.two .text_1,
+.tree .text_1 {
+    width: 350px;
+    height: 220px;
+    overflow: hidden;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background: linear-gradient(
+        -40deg,
+        rgb(106, 9, 9) 65%,
+        rgb(129, 0, 0) 50%
+    );
+}
+
+.one .text_1 h2,
+.two .text_1 h2,
+.tree .text_1 h2 {
+    padding: 20px;
+    font-size: 26px;
+    color: gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.one .text_1 .one_sten,
+.two .text_1 .one_sten {
+    padding-right: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+}
+
+.one .text_1 .two_sten,
+.two .text_1 .two_sten {
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+}
+
+.tree .text_1 h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.tree .text_1 .one_sten {
+    padding-right: 20px;
+    font-size: 26px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.tree .text_1 .two_sten {
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 28px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+
+    will-change: opacity, transform;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        height: auto;
+        min-height: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    header nav {
+        order: 3;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 10px 0;
+    }
+
+    header nav a {
+        font-size: 15px;
+    }
+
+    .logo_of_Acde {
+        font-size: 30px;
+    }
+
+    .image_box img {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .conter_1 {
+        margin-top: 145px;
+        height: 500px;
+    }
+
+    .card h1 {
+        font-size: 40px;
+    }
+
+    .start_logo {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .img_logo img {
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .text {
+        font-size: 35px;
+    }
+}
